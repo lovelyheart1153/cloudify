@@ -108,3 +108,36 @@ a {
     font-size: 1.6rem;
   }
 }
+
+/* Badges */
+.badge {
+  border-radius: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.3rem 1.2rem;
+  white-space: nowrap;
+}
+
+.badge--primary {
+  background-color: var(--color-primary-light);
+  color: var(--color-white);
+}
+
+.badge--secondary {
+  background-color: var(--color-secondary-light);
+  color: var(--color-white);
+}
+
+.badge--small {
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.6rem;
+  }
+
+  .badge--small {
+    font-size: 1.4rem;
+  }
+}
