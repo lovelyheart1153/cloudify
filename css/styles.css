@@ -1,6 +1,7 @@
 :root {
   --color-primary: #4f46e5;
   --color-primary-light: #6366f1;
+  --color-primary-extra-light: #e0e7ff;
   --color-secondary: #0ea5e9;
   --color-secondary-light: #38bdf8;
   --color-accent: #db2777;
@@ -161,4 +162,24 @@ a {
   content: "\2713";
   color: green;
   margin-right: 0.5rem;
+}
+
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon-container {
+  width: 64px;
+  height: 64px;
+  background-color: var(--color-primary-extra-light);
+  display: inline-flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
 }
