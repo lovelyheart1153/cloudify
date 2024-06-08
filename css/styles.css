@@ -15,6 +15,10 @@
   --color-dark-3: #1f2937;
   --color-white: #fff;
   --color-black: #000;
+
+  --border-radius-round: 30px;
+  --border-radius-full: 50%;
+  --border-light: 1px solid var(--color-light-2);
 }
 
 *,
@@ -90,10 +94,6 @@ a {
   border-bottom: 1px solid var(--color-accent);
 }
 
-.link-arrow:hover {
-  /* box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.3); */
-}
-
 .link-arrow::after {
   content: "\2192";
   margin-left: 0.5rem;
@@ -112,7 +112,7 @@ a {
 
 /* Badges */
 .badge {
-  border-radius: 30px;
+  border-radius: var(--border-radius-round);
   font-size: 1.4rem;
   font-weight: 500;
   padding: 0.3rem 1.2rem;
@@ -179,7 +179,7 @@ a {
   height: 64px;
   background-color: var(--color-primary-extra-light);
   display: inline-flex;
-  border-radius: 50%;
+  border-radius: var(--border-radius-full);
   justify-content: center;
   align-items: center;
 }
@@ -189,7 +189,7 @@ a {
   display: inline-block;
   font-family: inherit;
   font-size: inherit;
-  border-radius: 30px;
+  border-radius: var(--border-radius-round);
   padding: 1.2rem 4rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -262,8 +262,8 @@ a {
   padding: 1.2rem 2rem;
   font-size: 1.2rem;
   color: inherit;
-  border: 1px solid var(--color-light-2);
-  border-radius: 30px;
+  border: var(--border-light);
+  border-radius: var(--border-radius-round);
   outline: none;
   font-family: inherit;
   width: 100%;
@@ -277,4 +277,21 @@ a {
   .input {
     font-size: 1.4rem;
   }
+}
+
+/* Input group */
+.input-group {
+  border: var(--border-light);
+  border-radius: var(--border-radius-round);
+  display: flex;
+  align-items: center;
+}
+
+.input-group .input {
+  border: none;
+  flex: 1;
+}
+
+.input-group .btn {
+  margin: 3px;
 }
