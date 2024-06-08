@@ -371,3 +371,25 @@ a {
 .mb-4 {
   margin-bottom: 4rem;
 }
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+/* Media */
+.media {
+  display: flex;
+  gap: 1rem;
+}
+
+.media .media__title {
+  line-height: initial;
+}
+
+.media__image {
+  margin-top: 0.5rem;
+}
