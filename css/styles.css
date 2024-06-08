@@ -141,3 +141,24 @@ a {
     font-size: 1.4rem;
   }
 }
+
+/* Lists */
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+}
+
+.list--inline .list__item:not(:last-of-type) {
+  margin-right: 2rem;
+}
+
+.list--tick .list__item::before {
+  content: "\2713";
+  color: green;
+  margin-right: 0.5rem;
+}
