@@ -354,6 +354,19 @@ a {
   margin-bottom: 1.5rem;
 }
 
+.plan--popular .card__heading {
+  position: relative;
+}
+
+.plan--popular .card__heading::before {
+  content: url(/img/popular.svg);
+  display: inline-block;
+  width: 3rem;
+  position: absolute;
+  top: -5px;
+  right: 5%;
+}
+
 /* Utilities */
 .mb-4 {
   margin-bottom: 4rem;
