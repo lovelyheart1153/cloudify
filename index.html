@@ -14,10 +14,43 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="grid grid--cols-3">
-      <div style="background-color: aqua; height: 200px"></div>
-      <div style="background-color: red; height: 200px"></div>
-      <div style="background-color: greenyellow; height: 200px"></div>
+    <div class="card testimonial">
+      <div class="grid grid--cols-2">
+        <div class="testimonial__image-container">
+          <div class="testimonial__icon">
+            <img src="/img/double-quotes.svg" alt="Double quotes" />
+          </div>
+          <img
+            class="testimonial__image"
+            src="/img/testimonial.webp"
+            alt="A happy smilling customer"
+          />
+        </div>
+
+        <blockquote class="quote testimonial__quote">
+          <p class="quote__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+            officiis quas voluptates cumque odio iure ea itaque nostrum quisquam
+            cupiditate eos illum consequatur vero, totam reiciendis. Nesciunt
+            dolore enim impedit!
+          </p>
+          <footer>
+            <div class="media quote__identity">
+              <div class="media__image quote__line">
+                <svg class="icon icon--primary">
+                  <use xlink:href="/img/sprite.svg#icon-minus"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">John Doe</h3>
+                <p class="media__description quote__company">
+                  Tulsa Company Ltd.
+                </p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
     </div>
   </body>
 </html>

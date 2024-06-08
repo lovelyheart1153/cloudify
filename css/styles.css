@@ -446,3 +446,56 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Testimonials */
+.testimonial {
+  padding: 1.6rem;
+  overflow: visible;
+}
+
+.testimonial__image-container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.testimonial__image {
+  width: 100%;
+  display: block;
+}
+
+.testimonial__icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-radius-full);
+
+  position: absolute;
+  top: 2rem;
+  right: -2.5rem;
+}
+
+.testimonial__icon img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.testimonial__quote {
+  /* margin-left: 4rem; */
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial {
+    padding: 3rem;
+  }
+
+  .testimonial__quote {
+    margin-left: 4.5rem;
+  }
+
+  .testimonial__image-container {
+    margin-bottom: 0;
+  }
+}
