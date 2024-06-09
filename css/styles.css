@@ -839,3 +839,36 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }
+
+/* Plans Section */
+.plans {
+  padding: 2rem;
+  gap: 4rem;
+}
+
+.plans .plan {
+  max-width: 40rem;
+  justify-self: center;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+
+.plans .plan:hover {
+  transform: scale(1.05);
+}
+
+.plans .plan--popular:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .plans .plan {
+    max-width: 40rem;
+    /* justify-self: stretch; */
+    width: 100%;
+  }
+
+  .plans .plan--popular {
+    transform: scale(1.05);
+  }
+}
