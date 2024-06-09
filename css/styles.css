@@ -41,7 +41,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.6;
 
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 h1,
@@ -626,4 +626,118 @@ a {
 
 .block__heading-container {
   text-align: center;
+}
+
+/* Navigation */
+.header {
+  position: fixed;
+  width: 100%;
+}
+
+.header__content {
+  background-color: var(--color-black);
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.logo__brand {
+  font-size: 3rem;
+  color: var(--color-accent);
+}
+
+.logo__image {
+  height: 4rem;
+}
+
+.nav {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav__list {
+  list-style: none;
+  color: var(--color-light-3);
+  display: flex;
+  gap: 4rem;
+}
+
+.nav__item {
+}
+
+.nav__item:hover {
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  height: 2px;
+  width: 2.7rem;
+  background-color: var(--color-light-3);
+  transition: all 0.3s ease-in-out;
+}
+
+.bar:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.nav--open {
+  transform: translate(0) !important;
+}
+
+.hamburger--open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger--open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger--open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .header__content {
+    position: relative;
+  }
+
+  .nav {
+    position: absolute;
+    width: 100%;
+    top: 6rem;
+    left: 0;
+    background-color: var(--color-black);
+    padding: 5rem 0;
+    flex-direction: column;
+    height: 100vh;
+
+    transform: translatex(-100%);
+    z-index: 50;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nav__item {
+    font-size: 2rem;
+  }
 }
