@@ -14,73 +14,34 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="grid grid--cols-3 plans container">
-      <div class="plan">
-        <div class="card card--secondary">
-          <header class="card__heading">
-            <h3 class="plan__name">Entry</h3>
-            <span class="plan__price">$14</span>
-            <span class="plan__billing-cycle">/month</span>
-            <span class="badge badge--secondary badge--small">10% Off</span>
-            <span class="plan__description">Easy start on the cloud</span>
-          </header>
-          <div class="card__body">
-            <ul class="list list--tick mb-4">
-              <li class="list__item">Unlimited Websites</li>
-              <li class="list__item">Unlimited Bandwidth</li>
-              <li class="list__item">100GB SSD Storage</li>
-              <li class="list__item">3GB RAM</li>
-              <li class="list__item">Free Domain</li>
-            </ul>
-            <button class="btn btn--secondary btn--block">Take action</button>
-          </div>
-        </div>
+    <section class="block grid grid--cols-2 features container">
+      <div class="feature__content">
+        <span class="icon-container mb-2">
+          <svg class="icon icon--primary">
+            <use xlink:href="/img/sprite.svg#icon-power-plug"></use>
+          </svg>
+        </span>
+
+        <h3 class="mb-1">Super Easy to Use</h3>
+        <p class="mb-2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+          laboriosam cum libero provident officia facere non, optio repellendus
+          odio deleniti corporis temporibus sunt dicta distinctio tempora, quasi
+          odio deleniti corporis temporibus sunt dicta distinctio tempora, quasi
+          odio deleniti corporis temporibus sunt dicta distinctio tempora, quasi
+        </p>
+
+        <a href="#" class="link-arrow">Learn more</a>
       </div>
 
-      <div class="plan plan--popular">
-        <div class="card card--primary">
-          <header class="card__heading">
-            <h3 class="plan__name">Entry</h3>
-            <span class="plan__price">$14</span>
-            <span class="plan__billing-cycle">/month</span>
-            <span class="badge badge--primary badge--small">10% Off</span>
-            <span class="plan__description">Easy start on the cloud</span>
-          </header>
-          <div class="card__body">
-            <ul class="list list--tick mb-4">
-              <li class="list__item">Unlimited Websites</li>
-              <li class="list__item">Unlimited Bandwidth</li>
-              <li class="list__item">100GB SSD Storage</li>
-              <li class="list__item">3GB RAM</li>
-              <li class="list__item">Free Domain</li>
-            </ul>
-            <button class="btn btn--outline btn--block">Take action</button>
-          </div>
-        </div>
+      <div class="feature__image-container">
+        <img
+          class="feature__image"
+          src="/img/feature-1.webp"
+          alt="An image of a dashboard"
+        />
       </div>
-
-      <div class="plan">
-        <div class="card card--secondary">
-          <header class="card__heading">
-            <h3 class="plan__name">Entry</h3>
-            <span class="plan__price">$14</span>
-            <span class="plan__billing-cycle">/month</span>
-            <span class="badge badge--secondary badge--small">10% Off</span>
-            <span class="plan__description">Easy start on the cloud</span>
-          </header>
-          <div class="card__body">
-            <ul class="list list--tick mb-4">
-              <li class="list__item">Unlimited Websites</li>
-              <li class="list__item">Unlimited Bandwidth</li>
-              <li class="list__item">100GB SSD Storage</li>
-              <li class="list__item">3GB RAM</li>
-              <li class="list__item">Free Domain</li>
-            </ul>
-            <button class="btn btn--secondary btn--block">Take action</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <script src="/js/main.js"></script>
   </body>

@@ -872,3 +872,29 @@ a {
     transform: scale(1.05);
   }
 }
+
+/* Features */
+.features {
+  gap: 4rem;
+  align-items: center;
+}
+
+.feature__content {
+  /* align-self: center; */
+  padding: 2rem;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .features {
+    gap: 1rem;
+  }
+
+  .feature__content {
+    /* align-self: center; */
+    padding: 0.5rem;
+  }
+}
